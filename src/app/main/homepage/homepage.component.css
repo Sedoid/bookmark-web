@@ -1,0 +1,78 @@
+.main{
+  display: grid;
+  width: 100%;
+  grid-template-columns: auto 350px;
+  grid-column-gap: 30px;
+  justify-content: space-evenly;
+
+}
+
+.grid-container{
+  width: 100%;
+  display: grid;
+
+  justify-content: space-evenly;
+  grid-template-columns: auto auto auto;
+  grid-column-gap: 40px;
+  padding: 0px;
+}
+
+.grid-item{
+  margin-bottom: 2em;
+}
+
+.articles{
+
+}
+.sidebar{
+
+}
+
+/* 320px — 480px: Mobile devices
+481px — 768px: iPads, Tablets
+769px — 1024px: Small screens, laptops
+1025px — 1200px: Desktops, large screens
+1201px and more —  Extra large screens, TV */
+
+/* ----------- Mobile Devices ----------- */
+@media screen
+  and (min-device-width: 320px)
+  and (max-device-width: 480px){
+    .main{
+    grid-template-columns: auto;
+    }
+    .grid-container{
+      justify-content: space-evenly;
+      grid-template-columns: auto;
+    }
+}
+
+/* ----------- iPads, Tablets ----------- */
+@media screen
+  and (min-device-width: 481px)
+  and (max-device-width: 768px){
+    .main{
+      grid-template-columns: auto;
+      }
+    .grid-container{
+      justify-content: space-evenly;
+      grid-template-columns: auto auto;
+    }
+}
+
+/* ----------- Small Screens, Laptops ----------- */
+@media screen
+  and (min-device-width: 769px)
+  and (max-device-width: 1024px){
+    .main{
+      grid-template-columns: auto;
+      }
+    .grid-container{
+      justify-content: space-evenly;
+      grid-template-columns: auto auto auto;
+    }
+}
+
+/* ----------- Extra large screens, TV ----------- */
+@media screen and (min-device-width: 1201px){
+}

@@ -1,0 +1,12 @@
+.views svg{
+  position: relative;
+  top: 4px;
+}
+svg{
+ margin-right: 3px;
+}
+
+.card{
+  box-shadow: rgba(0, 0, 0, 0.1) -4px 9px 25px -6px;
+
+}

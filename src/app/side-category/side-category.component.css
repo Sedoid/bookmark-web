@@ -1,0 +1,11 @@
+.side_bar{
+  margin-bottom: 50px;
+}
+
+.card-title{
+  max-height: 82%;
+}
+.thumbnail-image{
+  width: 119px;
+  /* height: 75px; */
+}
