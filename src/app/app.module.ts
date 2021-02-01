@@ -10,6 +10,8 @@ import { HomepageComponent } from './main/homepage/homepage.component';
 import { ArticleCardComponent } from './article-card/article-card.component';
 import { PaginationComponent } from './pagination/pagination.component';
 import { SideCategoryComponent } from './side-category/side-category.component';
+import { LoginComponent } from './dashboard/login/login.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +22,9 @@ import { SideCategoryComponent } from './side-category/side-category.component';
     HomepageComponent,
     ArticleCardComponent,
     PaginationComponent,
-    SideCategoryComponent
+    SideCategoryComponent,
+    LoginComponent,
+    DashboardComponent
   ],
   imports: [
     BrowserModule,

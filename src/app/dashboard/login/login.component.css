@@ -1,0 +1,157 @@
+.row{
+  display: flex;
+  align-items: end;
+  position:absolute;
+  left:0;
+  right:0;
+  top:0;
+  bottom:0;
+  margin:0;
+  padding:0;
+
+}
+
+
+
+.right,.left{
+  position:relative;
+  height: 100vh;
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+}
+
+.back{
+  width: 70%;
+  height: 65%;
+  background-color: orange;
+  position: absolute;
+  z-index: 1
+
+}
+
+
+.image_box{
+  position: relative;
+  z-index: 99;
+  width: 80%;
+
+  height:100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.category_images{
+ padding-top:2em;
+  width: 100%;
+  height: 75%;
+  display: grid;
+  justify-content: center;
+  justify-content: space-evenly;
+  grid-template-columns: auto auto auto;
+  grid-column-gap: 2em;
+
+}
+
+.grid_image{
+  margin-bottom: 2em;
+   background-color: rgba(241, 231, 231, 0.945);
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-position: center center;
+   width: 15vw;
+   filter: blur(2px);
+   min-width: 100px;
+
+}
+
+.title{
+  width: 100%;
+}
+.middle{
+  filter: blur(0px);
+  transform: scale(1.33);
+}
+
+.left{
+  background-color: #0968BF;
+  background-image: url('/assets/img/background/Vector.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: top -250px left 250px ;
+}
+
+.auth{
+  width:100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: bottom -70px right 150px  ;
+  background-image: url('/assets/img/background/Vector-1.png');
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.auth_box{
+  width:85%;
+  min-height: 49%;
+  color: white;
+}
+li{
+  width: 50%;
+}
+.h3{
+  color:white;
+}
+li .nav-link{
+  border-bottom: 2px solid white;
+  padding: 0;
+  border-radius: 0px;
+}
+li .active{
+  border-bottom:2px solid orange;
+  background-color:rgba(255, 255, 255, 0);
+  border-radius: 0px;
+}
+
+form{
+  padding-top: 2em
+}
+form input{
+  border: 0px
+}
+
+
+
+/* ----------- Mobile Devices ----------- */
+@media screen
+  and (min-device-width: 320px)
+  and (max-device-width: 480px){
+    .main{
+    grid-template-columns: auto;
+    }
+    .grid-container{
+      justify-content: space-evenly;
+      grid-template-columns: auto;
+    }
+    .category_images{
+  grid-column-gap: 20px;
+
+    }
+    .left{
+      background-image: url('/assets/img/background/Vector.png');
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: top -150px left 150px ;
+    }
+
+    .auth{
+
+      background-position: bottom -70px right 150px  ;
+
+    }
+}
